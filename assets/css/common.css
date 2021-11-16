@@ -945,7 +945,7 @@ strong {
 }
 
 ::placeholder {
-  color: #AAA3B4;
+  color: #BDBDBD;
   transition: .4s;
 }
 
@@ -1008,6 +1008,12 @@ h2 {
   color: #fff;
 }
 
+.inner {
+  min-height: calc(100vh - 110px);
+  background: url(../img/inner-1.svg) no-repeat top left/1440px auto, url(../img/inner-2.svg) no-repeat right bottom/663px auto;
+  background-color: #7BCFBF;
+}
+
 .svgsprite {
   display: inline-block;
   fill: currentColor;
@@ -1034,9 +1040,19 @@ h2 {
   height: 311px;
 }
 
+.svgsprite._check {
+  width: 20px;
+  height: 14px;
+}
+
 .svgsprite._close {
   width: 38px;
   height: 38px;
+}
+
+.svgsprite._error {
+  width: 20px;
+  height: 20px;
 }
 
 .svgsprite._fb {
@@ -1047,6 +1063,11 @@ h2 {
 .svgsprite._logo {
   width: 118px;
   height: 70px;
+}
+
+.svgsprite._sended {
+  width: 74px;
+  height: 74px;
 }
 
 .svgsprite._task-1 {
@@ -1231,6 +1252,17 @@ h2 {
 
 .btn.--blue:hover {
   background-color: #08716D;
+}
+
+.btn.--submit {
+  width: 100%;
+  color: #fff;
+  background-color: #68C0AF;
+  margin-top: 34px;
+}
+
+.btn.--submit.--disabled {
+  background-color: #E0E0E0;
 }
 
 /*
@@ -1571,6 +1603,181 @@ h2 {
   margin-right: 36px;
 }
 
+.form {
+  padding-bottom: 60px;
+}
+
+.form__top {
+  min-height: calc(100% - 108px);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.form__socials {
+  width: 100%;
+  align-self: flex-end;
+}
+
+.form__wrap {
+  min-height: calc(100vh - 110px);
+}
+
+.form__panel {
+  background-color: #fff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 46px 78px;
+  width: 100%;
+  max-width: 550px;
+}
+
+.form__title {
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 27px;
+  text-align: center;
+  font-family: "Calibri", sans-serif;
+}
+
+.form__description {
+  text-align: center;
+  margin-bottom: 34px;
+  margin-top: -10px;
+}
+
+.input__name {
+  margin-bottom: 12px;
+}
+
+.input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input.--error input {
+  background-color: #F15858;
+  color: #fff;
+  border-color: #F15858;
+}
+
+.input.--succed input {
+  background-color: #7BCFBF;
+  color: #fff;
+  border-color: #7BCFBF;
+}
+
+.input input {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
+  width: 100%;
+  height: 64px;
+  border: 1px solid #828282;
+  border-radius: 6px;
+}
+
+.input input:focus {
+  border: 2px solid #68C0AF;
+}
+
+.form__links {
+  margin-bottom: 33px;
+}
+
+.form__link {
+  color: #353535;
+}
+
+.error__message {
+  margin-top: 10px;
+  color: #F15858;
+  display: none;
+}
+
+.--error .error__message {
+  display: block;
+}
+
+.succed {
+  position: absolute;
+  right: 21px;
+  top: 54px;
+  display: none;
+}
+
+.--succed .succed {
+  display: block;
+}
+
+.error {
+  position: absolute;
+  right: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.--error .error {
+  display: block;
+}
+
+.form__sended {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  padding-top: 18px;
+}
+
+.select__main {
+  position: relative;
+}
+
+.select__main input {
+  cursor: pointer;
+}
+
+.select__main.active:after {
+  transform: translateY(-50%) rotateZ(180deg);
+}
+
+.select__main:after {
+  content: "";
+  position: absolute;
+  right: 21px;
+  top: 50%;
+  transform: translateY(-50%) rotateZ(0);
+  width: 17px;
+  height: 10px;
+  background: url(../img/select.svg) no-repeat center/contain;
+  transition: .4s;
+}
+
+.select__drop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  margin-top: 10px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  background-color: #fff;
+  z-index: 200;
+  display: none;
+}
+
+.select__item {
+  padding: 5px 10px;
+}
+
+.select__item:hover {
+  background-color: #68C0AF;
+  color: #fff;
+}
+
 @media (min-width: 1950px) {
   .main {
     background: url(../img/main.svg) no-repeat center bottom/100% auto;
@@ -1795,6 +2002,52 @@ h2 {
 
   .timer .btn.--red {
     width: 100%;
+  }
+
+  .form__panel {
+    padding: 26px 20px;
+  }
+
+  .input {
+    margin-bottom: 20px;
+  }
+
+  .input input {
+    height: 55px;
+  }
+
+  .succed {
+    top: 48px;
+  }
+
+  .form__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .form__sended {
+    margin-bottom: 24px;
+  }
+
+  .form__sended .svgsprite._sended {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+@media (max-width: 500px) {
+  .form__link {
+    width: 100%;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  .form__link:last-child {
+    margin-bottom: 0px;
+  }
+
+  .btn.--submit {
+    margin-top: 22px;
   }
 }
 

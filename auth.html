@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title> :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <meta property="og:image" content="assets/share.png">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1cfce894-81e9-424c-b7af-ccc21b4ca1b2&amp;lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body class="body">
+    <header class="header"> 
+      <div class="container --flex --jcsb --aicn">
+        <div class="header__left --flex --aicn">
+          <div class="header__logo">
+                <svg class="svgsprite _logo">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#logo"></use>
+                </svg>
+          </div>
+          <nav class="header__nav nav --flex --aicn"><a class="nav__link active">Главная</a><a class="nav__link">Участники</a><a class="nav__link">Жюри</a><a class="nav__link">Новости</a></nav>
+        </div>
+        <div class="header__right"><a class="header__enter btn --enter" href="enter.html"> Вход для жюри</a></div>
+      </div>
+    </header>
+    <header class="mobile__header"> 
+      <div class="container --flex --jcsb"> 
+        <div class="burger --open">
+              <svg class="svgsprite _burger">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#burger"></use>
+              </svg>
+        </div>
+        <div class="mobile-enter"><img src="./assets/img/enter.png" alt=""></div>
+      </div>
+    </header>
+    <div class="mobile-menu"> 
+      <div class="mobile-menu__header">
+        <div class="container --flex"> 
+          <div class="burger --close">
+                <svg class="svgsprite _close">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                </svg>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu__body">
+        <div class="container">
+          <div class="mobile-menu__nav">
+            <div class="nav__link active"> <a href="#">Главная</a></div>
+            <div class="nav__link"> <a href="#">Участники</a></div>
+            <div class="nav__link"> <a href="#">Жюри</a></div>
+            <div class="nav__link"> <a href="#">Новости</a></div>
+          </div><a class="header__enter btn --enter" href="enter.html"> Вход для жюри</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <form class="form inner">
+        <div class="container">
+          <div class="form__wrap">
+            <div class="form__top">
+              <div class="form__panel">
+                <div class="form__title">Авторизация</div>
+                <div class="form__block">
+                  <div class="input --reqired">
+                    <div class="input__name">Логин</div>
+                    <input type="text" placeholder="Логин">
+                    <div class="succed">
+                          <svg class="svgsprite _check">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#check"></use>
+                          </svg>
+                    </div>
+                    <div class="error">
+                          <svg class="svgsprite _error">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#error"></use>
+                          </svg>
+                    </div>
+                    <div class="error__message">Ошибка ввода данных!</div>
+                  </div>
+                </div>
+                <div class="form__block">
+                  <div class="input --reqired">
+                    <div class="input__name">Пароль</div>
+                    <input type="password" placeholder="Пароль">
+                    <div class="succed">
+                          <svg class="svgsprite _check">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#check"></use>
+                          </svg>
+                    </div>
+                    <div class="error">
+                          <svg class="svgsprite _error">
+                            <use xlink:href="assets/img/sprites/svgsprites.svg#error"></use>
+                          </svg>
+                    </div>
+                    <div class="error__message">Ошибка ввода данных!</div>
+                  </div>
+                </div>
+                <div class="form__links --flex --jcsb"> <a class="form__link" href="">Забыл пароль</a><a class="form__link" href="">Зарегистрироваться</a></div>
+                <button class="btn --submit --disabled">Авторизоваться</button>
+              </div>
+            </div>
+            <div class="form__socials">
+              <div class="socials --flex --aicn --jccn"> <a class="socials__link">
+                      <svg class="svgsprite _fb">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#fb"></use>
+                      </svg></a><a class="socials__link">
+                      <svg class="svgsprite _tw">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#tw"></use>
+                      </svg></a><a class="socials__link">
+                      <svg class="svgsprite _yt">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#yt"></use>
+                      </svg></a><a class="socials__link">
+                      <svg class="svgsprite _vk">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#vk"></use>
+                      </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>
