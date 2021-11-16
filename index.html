@@ -31,7 +31,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1cfce894-81e9-424c-b7af-ccc21b4ca1b2&amp;lang=ru_RU" type="text/javascript"></script>
   </head>
   <body class="body">
-    <div class="header"> 
+    <header class="header"> 
       <div class="container --flex --jcsb --aicn">
         <div class="header__left --flex --aicn">
           <div class="header__logo">
@@ -42,6 +42,37 @@
           <nav class="header__nav nav --flex --aicn"><a class="nav__link active">Главная</a><a class="nav__link">Участники</a><a class="nav__link">Жюри</a><a class="nav__link">Новости</a></nav>
         </div>
         <div class="header__right"><a class="header__enter btn --enter" href="enter.html"> Вход для жюри</a></div>
+      </div>
+    </header>
+    <header class="mobile__header"> 
+      <div class="container --flex --jcsb"> 
+        <div class="burger --open">
+              <svg class="svgsprite _burger">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#burger"></use>
+              </svg>
+        </div>
+        <div class="mobile-enter"><img src="./assets/img/enter.png" alt=""></div>
+      </div>
+    </header>
+    <div class="mobile-menu"> 
+      <div class="mobile-menu__header">
+        <div class="container --flex"> 
+          <div class="burger --close">
+                <svg class="svgsprite _close">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                </svg>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu__body">
+        <div class="container">
+          <div class="mobile-menu__nav">
+            <div class="nav__link active"> <a href="#">Главная</a></div>
+            <div class="nav__link"> <a href="#">Участники</a></div>
+            <div class="nav__link"> <a href="#">Жюри</a></div>
+            <div class="nav__link"> <a href="#">Новости</a></div>
+          </div><a class="header__enter btn --enter" href="enter.html"> Вход для жюри</a>
+        </div>
       </div>
     </div>
     <div class="content">
@@ -103,7 +134,7 @@
       <section class="timer"> 
         <div class="container"> 
           <h2 class="h2 --white">До окончания подачи заявок</h2>
-          <div class="timer__block" id="countdown">
+          <div class="timer__block" id="countdown" data-year="2021" data-month="11" data-day="18" data-hours="10" data-minutes="30">
             <div class="timer__item">
               <div class="timer__days timer__number"></div>
               <div class="timer__text">дней</div>
