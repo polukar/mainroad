@@ -1065,6 +1065,21 @@ h2 {
   height: 70px;
 }
 
+.svgsprite._news-fb {
+  width: 28px;
+  height: 28px;
+}
+
+.svgsprite._news-tw {
+  width: 28px;
+  height: 28px;
+}
+
+.svgsprite._news-vk {
+  width: 28px;
+  height: 28px;
+}
+
 .svgsprite._sended {
   width: 74px;
   height: 74px;
@@ -1678,6 +1693,7 @@ h2 {
   height: 64px;
   border: 1px solid #828282;
   border-radius: 6px;
+  background-color: #fff;
 }
 
 .input input:focus {
@@ -1778,6 +1794,512 @@ h2 {
   color: #fff;
 }
 
+.partic.--white {
+  background-color: #fff;
+}
+
+.partic .input input {
+  border: none;
+}
+
+.partic.active .others-winners {
+  display: none;
+}
+
+.partic {
+  background: url(../img/inner-1.svg) no-repeat top left/1440px auto, url(../img/inner-2.svg) no-repeat right bottom/663px auto, url(../img/partic-top.svg) no-repeat left 0 top -400px/1950px auto;
+}
+
+.form__socials-partic {
+  padding-bottom: 30px;
+}
+
+.partic__top {
+  color: #fff;
+  padding-top: 36px;
+  padding-bottom: 207px;
+  margin-top: -22px;
+}
+
+.partic__top .select {
+  color: #353535;
+}
+
+.inner__title {
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 87.07%;
+  margin-bottom: 50px;
+  color: #fff;
+  font-family: "Calibri", sans-serif;
+}
+
+.form__block--search .input {
+  flex-grow: 1;
+}
+
+.switch__block {
+  width: 311px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch__block .switch {
+  margin-right: 20px;
+}
+
+.switch {
+  width: 78px;
+  height: 39px;
+  border-radius: 100px;
+  background-color: #BDBDBD;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch.active {
+  background-color: #53B3A1;
+}
+
+.switch.active:after {
+  border-color: #53B3A1;
+  left: 39px;
+}
+
+.switch:after {
+  content: "";
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  border: 2px solid #BDBDBD;
+  transition: .4s;
+}
+
+.selects {
+  margin-bottom: 16px;
+}
+
+.selects__block {
+  width: 100%;
+  max-width: 248px;
+  margin-right: 30px;
+}
+
+.selects__block:last-child {
+  margin-right: 0px;
+}
+
+.inner__small-title {
+  padding: 10px;
+  display: inline-block;
+  background-color: #7BCFBF;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 107.07%;
+  font-family: "Calibri", sans-serif;
+  margin-bottom: 26px;
+}
+
+.winner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+.winner:last-child {
+  margin-bottom: 0px;
+}
+
+.winner__pic {
+  width: 290px;
+  min-height: 242px;
+}
+
+.winner__info {
+  width: calc(100% - 290px);
+  padding: 36px 46px;
+  color: #000;
+}
+
+.winner__title {
+  font-family: Calibri;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  margin-bottom: 8px;
+}
+
+.winner__description {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 57px;
+}
+
+.winner__tags {
+  display: flex;
+}
+
+.winner__tag {
+  display: flex;
+  height: 33px;
+  margin-right: 12px;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.winner__tag:last-child {
+  margin-right: 0px;
+}
+
+.winner__tag.--green {
+  width: 72px;
+  min-width: 72px;
+  color: #41BD22;
+  background: url(../img/gree-tag.svg) no-repeat right top/contain;
+}
+
+.winner__tag.--orange {
+  border: 1px solid #F2724A;
+  border-radius: 4px;
+  color: #F2724A;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.winner__tag.--blue {
+  border: 1px solid #72B0FA;
+  border-radius: 4px;
+  color: #72B0FA;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.prize {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border-radius: 50%;
+  width: 77px;
+  height: 77px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.--gold .prize {
+  background: #fff url(../img/gold.svg) no-repeat center/auto;
+}
+
+.--silver .prize {
+  background: #fff url(../img/silver.svg) no-repeat center/auto;
+}
+
+.others-winners .winner__tags {
+  flex-wrap: wrap;
+}
+
+.others-winners .winner__tag {
+  margin-bottom: 10px;
+}
+
+.others-winners .inner__small-title {
+  width: 100%;
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 46px;
+}
+
+.others-winners .winner {
+  width: calc(33.33% - 21px);
+  margin-right: 21px;
+  border: 1px solid #53B3A1;
+  margin-bottom: 36px;
+}
+
+.others-winners .winner__info {
+  width: 100%;
+}
+
+.others-winners .form__socials {
+  padding-bottom: 30px;
+}
+
+.others-winners__list {
+  margin-right: -21px;
+}
+
+.news {
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.news__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+}
+
+.news__panel {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 36px;
+  margin-right: 20px;
+}
+
+.news__panel--50 {
+  width: calc(50% - 20px);
+}
+
+.news__panel--33 {
+  width: calc(33.33% - 20px);
+}
+
+.news__pic {
+  height: 400px;
+  width: 100%;
+}
+
+.news__info {
+  min-height: 140px;
+  padding: 18px 36px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.news__title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  font-family: "Calibri", sans-serif;
+  height: 63px;
+  margin-bottom: 10px;
+}
+
+.news__date {
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.news-inner {
+  background: url(../img/news-inner-top.svg) no-repeat top -154px left/1950px auto, url(../img/news-inner-bottom.svg) no-repeat bottom right/1950px auto;
+  background-color: #fff;
+  padding-top: 170px;
+}
+
+.news-inner-wrap {
+  max-width: 1014px;
+  margin: 0 auto;
+}
+
+.crumbs {
+  display: flex;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.crumbs__link span {
+  color: #53B3A1;
+  padding-right: 5px;
+  padding-left: 3px;
+}
+
+.crumbs__link:last-child {
+  color: #BDBDBD;
+}
+
+.crumbs__link:last-child span {
+  display: none;
+}
+
+.inner-news__title {
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 87.07%;
+  font-family: "Calibri", sans-serif;
+  margin-bottom: 26px;
+}
+
+.inner-news__date {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 36px;
+}
+
+.inner-news__pic {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 56px;
+}
+
+.inner-news__pic img {
+  width: 100%;
+}
+
+.inner-news__small-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 105.57%;
+  font-family: "Calibri", sans-serif;
+  margin-bottom: 46px;
+}
+
+.inner-news__small-text {
+  margin-bottom: 46px;
+}
+
+.inner-news__small-text p {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 22px;
+}
+
+.inner-news__small-text p:last-child {
+  margin-bottom: 0px;
+}
+
+.inner-news__subscribe p {
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+
+.inner-news__socials {
+  display: flex;
+  margin-bottom: 54px;
+}
+
+.inner-news__social {
+  width: 144px;
+  border-radius: 6px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  background-color: #68c0af;
+}
+
+.inner-news__social:last-child {
+  margin-right: 0px;
+}
+
+.other__news .inner__small-title {
+  background-color: transparent;
+  margin-bottom: 46px;
+  padding: 0;
+}
+
+.other__news .form__socials {
+  padding-bottom: 30px;
+}
+
+.other__news .news__pic {
+  height: 373px;
+}
+
+.jury {
+  padding-bottom: 30px;
+  padding-top: 35px;
+}
+
+.jury .form__wrap {
+  min-height: calc(100vh - 225px);
+}
+
+.jury__list {
+  display: flex;
+  margin-right: -20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.jury__item {
+  position: relative;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: calc(25% - 20px);
+}
+
+.jury__photo {
+  height: 337px;
+}
+
+.jury__info {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translateY(256px);
+  transition: .4s;
+  padding: 17px 20px;
+  z-index: 100;
+  top: 0;
+}
+
+.jury__item:hover .jury__info {
+  transform: translateY(0);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.jury__name {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.jury__teams {
+  max-width: 1014px;
+  margin: 0 auto;
+}
+
+.jury-team {
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 46px;
+  padding-right: 36px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.jury-team__name {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 105.57%;
+  font-family: "Calibri", sans-serif;
+}
+
+.jury-team__number {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: #F15858;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 105.57%;
+  font-family: "Calibri", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 1950px) {
   .main {
     background: url(../img/main.svg) no-repeat center bottom/100% auto;
@@ -1789,6 +2311,10 @@ h2 {
 
   .organization {
     background: url(../img/organization.svg) no-repeat center top/100% auto;
+  }
+
+  .partic {
+    background: url(../img/inner-1.svg) no-repeat top left/1440px auto, url(../img/inner-2.svg) no-repeat right bottom/663px auto, url(../img/partic-top.svg) no-repeat 0 top/100% auto;
   }
 }
 
@@ -1921,6 +2447,35 @@ h2 {
     width: 44px;
     height: 44px;
   }
+
+  .partic__top {
+    margin-top: -20px;
+    background-position: left top;
+  }
+
+  .winner__tags {
+    flex-wrap: wrap;
+  }
+
+  .winner__tag {
+    margin-bottom: 10px;
+  }
+
+  .winner__title {
+    padding-right: 45px;
+  }
+
+  .others-winners .winner {
+    width: calc(50% - 21px);
+  }
+
+  .news__panel--33 {
+    width: calc(50% - 20px);
+  }
+
+  .jury__item {
+    width: calc(33.333% - 20px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -2032,6 +2587,168 @@ h2 {
   .form__sended .svgsprite._sended {
     width: 54px;
     height: 54px;
+  }
+
+  .inner__title {
+    font-size: 56px;
+    line-height: 87.07%;
+  }
+
+  .form__block--search {
+    display: block;
+  }
+
+  .switch__block {
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .switch__block br {
+    display: none;
+  }
+
+  .selects__block {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+
+  .others-winners .winner {
+    width: calc(100% - 21px);
+  }
+
+  .winner__title {
+    font-size: 28px;
+    margin-bottom: 12px;
+    line-height: 34px;
+  }
+
+  .winner__description {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .crumbs__link {
+    font-size: 14px;
+  }
+
+  .inner-news__title {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin-bottom: 0px;
+    font-size: 38px;
+  }
+
+  .inner-news__date {
+    padding: 5px;
+    background-color: #fff;
+  }
+
+  .inner-news__pic {
+    margin-bottom: 30px;
+  }
+
+  .inner-news__small-title {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+
+  .inner-news__small-text p {
+    font-size: 16px;
+  }
+
+  .inner-news__subscribe p {
+    font-size: 18px;
+  }
+
+  .inner-news__social {
+    width: 70px;
+  }
+
+  .jury .form__wrap {
+    margin-bottom: 30px;
+  }
+
+  .jury__item {
+    width: calc(50% - 20px);
+  }
+
+  .jury-team {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .jury-team__name {
+    font-size: 24px;
+  }
+
+  .jury-team__number {
+    width: 42px;
+    height: 42px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 650px) {
+  .news__panel--33 {
+    width: calc(100% - 20px);
+  }
+
+  .news__panel--50 {
+    width: calc(100% - 20px);
+  }
+
+  .news__info {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+    min-height: auto;
+  }
+
+  .news__title {
+    font-size: 20px;
+    line-height: 24px;
+    min-height: 45px;
+    height: auto;
+  }
+
+  .news__date {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .winner {
+    display: block;
+  }
+
+  .winner__pic {
+    width: 100%;
+    height: 176px;
+  }
+
+  .partic {
+    background: url(../img/inner-1.svg) no-repeat top left/680px auto, url(../img/inner-2.svg) no-repeat right bottom/363px auto, url(../img/partic-top-mobile.svg) no-repeat left 0 top 0/2050px auto;
+  }
+
+  .winner__info {
+    width: 100%;
+    padding: 16px 26px;
+  }
+
+  .partic__top {
+    padding-bottom: 90px;
+  }
+}
+
+@media (max-width: 550px) {
+  .jury__item {
+    width: calc(100% - 20px);
   }
 }
 
