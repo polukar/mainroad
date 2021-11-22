@@ -2648,6 +2648,16 @@ h2 {
   flex-wrap: wrap;
 }
 
+.video.one-slide .next,
+.video.one-slide .prev {
+  display: none;
+}
+
+.video.one-slide .swiper-slide {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 @media (min-width: 1950px) {
   .main {
     background: url(../img/main.svg) no-repeat center bottom/100% auto;
