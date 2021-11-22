@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title> :: Frontend pack</title>
+    <!--
+    link(rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png")
+    link(rel="manifest" href="assets/site.webmanifest")
+    link(rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#ffffff")
+    link(rel="shortcut icon" href="assets/favicon.ico")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-config" content="assets/browserconfig.xml")
+    meta(name="theme-color" content="#ffffff")
+    
+    -->
+    <meta name="description" content="Description">
+    <meta property="og:url" content="https://">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="title">
+    <meta property="twitter:title" content="title">
+    <meta property="og:description" content="description">
+    <meta property="twitter:description" content="description">
+    <meta property="og:image" content="assets/share.png">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1cfce894-81e9-424c-b7af-ccc21b4ca1b2&amp;lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body class="body">
+    <header class="header"> 
+      <div class="container --flex --jcsb --aicn">
+        <div class="header__left --flex --aicn">
+          <div class="header__logo">
+                <svg class="svgsprite _logo">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#logo"></use>
+                </svg>
+          </div>
+          <nav class="header__nav nav --flex --aicn"><a class="nav__link active">Главная</a><a class="nav__link">Участники</a><a class="nav__link">Жюри</a><a class="nav__link">Новости</a></nav>
+        </div>
+        <div class="header__right"><a class="header__enter btn --enter" href="enter.html"> Вход для жюри</a></div>
+      </div>
+    </header>
+    <header class="mobile__header"> 
+      <div class="container --flex --jcsb"> 
+        <div class="burger --open">
+              <svg class="svgsprite _burger">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#burger"></use>
+              </svg>
+        </div>
+        <div class="mobile-enter"><img src="./assets/img/enter.png" alt=""></div>
+      </div>
+    </header>
+    <div class="mobile-menu"> 
+      <div class="mobile-menu__header">
+        <div class="container --flex"> 
+          <div class="burger --close">
+                <svg class="svgsprite _close">
+                  <use xlink:href="assets/img/sprites/svgsprites.svg#close"></use>
+                </svg>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu__body">
+        <div class="container">
+          <div class="mobile-menu__nav">
+            <div class="nav__link active"> <a href="#">Главная</a></div>
+            <div class="nav__link"> <a href="#">Участники</a></div>
+            <div class="nav__link"> <a href="#">Жюри</a></div>
+            <div class="nav__link"> <a href="#">Новости</a></div>
+          </div><a class="header__enter btn --enter" href="enter.html"> Вход для жюри</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inner team --white">
+        <div class="team__head"> 
+          <div class="container --flex --jcsb">
+            <div class="team__pic" style="background: url(./assets/img/team__empty-photo.svg) no-repeat center / cover; "></div>
+            <div class="team__info"> 
+              <div class="team__tags">
+                <div class="team__tag --white-arrow">Кино</div>
+                <div class="team__tag --white">Анимационное кино</div>
+              </div>
+              <div class="inner__title team__title">Название команды участника</div>
+              <div class="team__description">Государственное бюджетное учреждение дополнительного образования “Брянский областной губернаторский Дворец детского и юношеского творчества имени Ю.А.Гагарина”</div>
+              <div class="team__region"> <b>Регион:</b>Московская область</div>
+            </div>
+          </div>
+        </div>
+        <div class="team__project">
+          <div class="container --flex --jcsb">
+            <div class="team__project-left">
+              <div class="inner__small-title team__small-title">Проект</div>
+              <div class="team__project-title">Семейный проект «Безопасная дорога в детский сад» формирование знаний о правилах дорожного движения у детей дошкольного возраста</div>
+              <div class="team__project-text"> <b>Цель проекта: </b>Создать условия для интенсификации работы с семьей на основе двухстороннего взаимодействия, направленных на усвоение и закрепление знаний детей и их родителей о правилах дорожного движения. детей и их родителей о правилах дорожного движения. детей и их родителей о правилах дорожного движения.</div>
+              <button class="team__all-text">Полностью</button>
+            </div>
+            <div class="team__project-right"> 
+              <div class="team__partic">
+                <div class="team__partic-title">Участники</div>
+                <div class="team__partic-user">
+                  <div class="team__partic-avatar"><img src="./assets/img/user.png" alt=""></div>
+                  <div class="team__partic-name">Александров Иван Петрович</div>
+                </div>
+                <div class="team__partic-user">
+                  <div class="team__partic-avatar"><img src="./assets/img/user.png" alt=""></div>
+                  <div class="team__partic-name">Александров Иван Петрович</div>
+                </div>
+                <div class="team__partic-user">
+                  <div class="team__partic-avatar"><img src="./assets/img/user.png" alt=""></div>
+                  <div class="team__partic-name">Александров Иван Петрович</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery">
+          <div class="container">
+            <div class="inner__small-title team__small-title">Фотогалерея</div>
+            <div class="gallery__slider-wrap">
+              <div class="gallery__slider">
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide">
+                    <div class="gallery__pic"><img src="./assets/img/slide.jpg" alt=""></div>
+                    <div class="gallery__description">Подпись к фото</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__pic"><img src="./assets/img/slide.jpg" alt=""></div>
+                    <div class="gallery__description">Подпись к фото</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__pic"><img src="./assets/img/slide.jpg" alt=""></div>
+                    <div class="gallery__description">Подпись к фото</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__pic"><img src="./assets/img/slide.jpg" alt=""></div>
+                    <div class="gallery__description">Подпись к фото</div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__pic"><img src="./assets/img/slide.jpg" alt=""></div>
+                    <div class="gallery__description">Подпись к фото</div>
+                  </div>
+                </div>
+              </div>
+              <div class="next">
+                    <svg class="svgsprite _next">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                    </svg>
+              </div>
+              <div class="prev">
+                    <svg class="svgsprite _prev">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#prev"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="container">
+            <div class="inner__small-title team__small-title">Видео</div>
+            <div class="video__slider-wrap">
+              <div class="video__slider">
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide">
+                    <div class="video__slide">
+                      <div class="video__frame"><iframe src="https://www.youtube.com/embed/rAxhaiNNfRk?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                      <div class="video__info"><a class="video__link" href="#"> Ссылка на видеоролик</a>
+                        <div class="video__ico">
+                              <svg class="svgsprite _play">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#play"></use>
+                              </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video__slide">
+                      <div class="video__frame"><iframe src="https://www.youtube.com/embed/rAxhaiNNfRk?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                      <div class="video__info"><a class="video__link" href="#"> Ссылка на видеоролик</a>
+                        <div class="video__ico">
+                              <svg class="svgsprite _play">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#play"></use>
+                              </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video__slide">
+                      <div class="video__frame"><iframe src="https://www.youtube.com/embed/rAxhaiNNfRk?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                      <div class="video__info"><a class="video__link" href="#"> Ссылка на видеоролик</a>
+                        <div class="video__ico">
+                              <svg class="svgsprite _play">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#play"></use>
+                              </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video__slide">
+                      <div class="video__frame"><iframe src="https://www.youtube.com/embed/rAxhaiNNfRk?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                      <div class="video__info"><a class="video__link" href="#"> Ссылка на видеоролик</a>
+                        <div class="video__ico">
+                              <svg class="svgsprite _play">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#play"></use>
+                              </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video__slide">
+                      <div class="video__frame"><iframe src="https://www.youtube.com/embed/rAxhaiNNfRk?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                      <div class="video__info"><a class="video__link" href="#"> Ссылка на видеоролик</a>
+                        <div class="video__ico">
+                              <svg class="svgsprite _play">
+                                <use xlink:href="assets/img/sprites/svgsprites.svg#play"></use>
+                              </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="next">
+                    <svg class="svgsprite _next">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#next"></use>
+                    </svg>
+              </div>
+              <div class="prev">
+                    <svg class="svgsprite _prev">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#prev"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team__docs"> 
+          <div class="container">
+            <div class="inner__small-title team__small-title">Документы</div>
+            <div class="team__docs-list"><a class="team__doc" href="#" download> 
+                <div class="team__doc-ico"> 
+                      <svg class="svgsprite _load">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#load"></use>
+                      </svg>
+                </div>
+                <div class="team__doc-text">Презентация социологический опрос для родителей ДФШ Калинушка</div></a><a class="team__doc" href="#" download> 
+                <div class="team__doc-ico"> 
+                      <svg class="svgsprite _load">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#load"></use>
+                      </svg>
+                </div>
+                <div class="team__doc-text">Презентация социологический опрос для родителей ДФШ Калинушка</div></a><a class="team__doc" href="#" download> 
+                <div class="team__doc-ico"> 
+                      <svg class="svgsprite _load">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#load"></use>
+                      </svg>
+                </div>
+                <div class="team__doc-text">Презентация социологический опрос для родителей ДФШ Калинушка</div></a><a class="team__doc" href="#" download> 
+                <div class="team__doc-ico"> 
+                      <svg class="svgsprite _load">
+                        <use xlink:href="assets/img/sprites/svgsprites.svg#load"></use>
+                      </svg>
+                </div>
+                <div class="team__doc-text">Презентация социологический опрос для родителей ДФШ Калинушка</div></a></div>
+          </div>
+        </div>
+        <form class="score"> 
+          <div class="container"> 
+            <div class="inner__small-title team__small-title">Оценки жюри</div>
+            <div class="score__table-scroll">
+              <div class="score__table">
+                <div class="score__head">
+                  <div class="score__text">Критерий оценки</div>
+                  <div class="score__number">1</div>
+                  <div class="score__number">2</div>
+                  <div class="score__number">3</div>
+                  <div class="score__number">4</div>
+                  <div class="score__number">5</div>
+                  <div class="score__number">6</div>
+                  <div class="score__number">7</div>
+                  <div class="score__number">8</div>
+                  <div class="score__number">9</div>
+                  <div class="score__number">10</div>
+                </div>
+                <div class="score__body">
+                  <div class="score__tr">
+                    <div class="score__text">Художественное и техническое исполнение работ</div>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                    <label class="score__point">
+                      <input type="radio" name="r_1"><span></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="score__bottom">
+                  <button class="btn --red">сохранить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__socials">
+            <div class="socials --flex --aicn --jccn"> <a class="socials__link">
+                    <svg class="svgsprite _fb">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#fb"></use>
+                    </svg></a><a class="socials__link">
+                    <svg class="svgsprite _tw">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#tw"></use>
+                    </svg></a><a class="socials__link">
+                    <svg class="svgsprite _yt">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#yt"></use>
+                    </svg></a><a class="socials__link">
+                    <svg class="svgsprite _vk">
+                      <use xlink:href="assets/img/sprites/svgsprites.svg#vk"></use>
+                    </svg></a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/vendors~main.bundle.js"></script>
+    <script src="assets/js/main.bundle.js?v=1.2.3"></script>
+  </body>
+</html>
